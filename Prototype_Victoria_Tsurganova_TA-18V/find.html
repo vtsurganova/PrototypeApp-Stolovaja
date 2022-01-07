@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stolovaja</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+
+</head>
+<style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    body {
+        background-color: rgb(182, 182, 182);
+    }
+    .container {
+        height: 100vh;
+        max-width: 450px;
+        margin: auto;
+
+        background-color: whitesmoke;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #menu {
+        position: fixed;
+        bottom:0;
+
+        padding-top: 5px;
+        width: 450px;
+        height: 50px;
+        margin: 0px;
+        z-index:50000;
+        background-color: #E6E6E6;
+        border: black solid 1px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+</style>
+    <body>
+        <div class="container" style="padding: 0px;">
+            <div class="row" style="padding: 25px;">
+
+                <div>
+                    <div class="input-group mb-3" style="padding: 0">
+                        <span style="padding: 5px; padding-right: 0" class="input-group-text" id="basic-addon1"><span style="width: 30px; height: 30px" class="iconify" data-icon="mdi-light:magnify" data-inline="false"></span></span>
+                        <input type="text" class="form-control" placeholder="Найти" aria-label="Find" aria-describedby="basic-addon1">
+                    </div>
+
+                    <h3 style="font-weight: 600;">Популярные рецепты</h3>
+
+                    <div style="background-color: black; height: 3px; width: 100%; margin-top: 20px;"></div>
+
+                    <div class="row" style="margin: 0; margin-top: 15px;">
+                        <div onclick="theFunction()" style="cursor: pointer; background-image: url('img/steak.jpg'); background-size:cover; height: 150px; width: 49%;"></div>
+                        <div onclick="theFunction()" style="cursor: pointer; background-image: url('img/dessert.jpg'); margin-left: 2%; background-size:cover; height: 150px; width: 49%;"></div>
+                    </div>
+
+                    <div class="row" style="margin: 0; margin-top: 10px;">
+                        <div onclick="theFunction()" style="cursor: pointer; background-image: url('img/steak.jpg'); background-size:cover; height: 150px; width: 49%;"></div>
+                        <div onclick="theFunction()" style="cursor: pointer; background-image: url('img/dessert.jpg'); margin-left: 2%; background-size:cover; height: 150px; width: 49%;"></div>
+                    </div>
+
+                    <div class="row" style="margin: 0; margin-top: 10px;">
+                        <div onclick="theFunction()" style="cursor: pointer; background-image: url('img/steak.jpg'); background-size:cover; height: 150px; width: 49%;"></div>
+                        <div onclick="theFunction()" style="cursor: pointer; background-image: url('img/dessert.jpg'); margin-left: 2%; background-size:cover; height: 150px; width: 49%;"></div>
+                    </div>
+
+                    <div onclick="theFunction()" style="margin-top: 10px; cursor: pointer; background-image: url('img/dessert.jpg'); background-position: center; background-size:cover; height: 150px; width: 100%;"></div>
+                </div>  
+
+
+            </div>      
+            <div id="menu">
+                <span onclick="document.location='main.html'" style="cursor: pointer; margin-left: auto; margin-right: auto; width: 40px; height: 40px" class="iconify" data-icon="mdi-light:home" data-inline="false"></span>
+                <span onclick="document.location='find.html'" style="cursor: pointer; color: #24ACD7; margin-left: auto; margin-right: auto; width: 40px; height: 40px" class="iconify" data-icon="mdi-light:magnify" data-inline="false"></span>
+                <span onclick="document.location='add.html'" style="cursor: pointer; margin-left: auto; margin-right: auto; width: 40px; height: 40px" class="iconify" data-icon="mdi-light:plus-box" data-inline="false"></span>
+                <span onclick="document.location='activity.html'" style="cursor: pointer; margin-left: auto; margin-right: auto; width: 40px; height: 40px" class="iconify" data-icon="mdi-light:comment" data-inline="false"></span>
+                <span onclick="document.location='profile.html'" style="cursor: pointer; margin-left: auto; margin-right: auto; width: 40px; height: 40px" class="iconify" data-icon="mdi-light:account" data-inline="false"></span>
+            </div>
+        </div>
+
+
+<script>
+    function theFunction(){
+        document.location.href = "recipe.html";
+    }
+</script>
+
+
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
